@@ -1,5 +1,9 @@
 # CONTROL Toolkit v0.5c — Guide utilisateur et technique
 
+**Téléchargement :** [ControlToolkit_0.5c.zip](releases/ControlToolkit_0.5c.zip)  
+**Notes de version :** [v0.5b](docs/v0.5c/CHANGES_v0.5b_RenderSettingsHook.md) · [v0.5c](docs/v0.5c/CHANGES_v0.5c_CleanHotsamplingUI.md)
+
+
 Édition de CONTROL 1 (DX12) : toolkit ImGui intégré, hotsampling, post-process, lumières natives Northlight Spot/Point, Camera Path, IGCSDOF et raccourcis configurables.
 
 > **Politique Lights : réutiliser les lumières, pas les supprimer.** Cette version ne comporte **aucune commande Delete Light**. Une lumière créée peut être sélectionnée, désactivée temporairement, déplacée et reconfigurée pendant la session. Une réutilisation persistante entre niveaux via presets n'est **pas implémentée ni validée**. Ne pas confondre avec les boutons « Delete Node » du Camera Path, qui agissent uniquement sur ses nœuds.
