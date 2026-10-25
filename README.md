@@ -6,7 +6,7 @@ An in-game toolkit for **CONTROL (DX12)**.
 
 - [Windows release package](releases/ControlToolkit_0.5c.zip)
 - [v0.5c source code](source/v0.5c/)
-- [Frans' IGCSDOF setup](docs/v0.5c/IGCSDOF_SETUP.md)
+- [About IGCSConnector](docs/v0.5c/IGCSDOF_SETUP.md)
 - [v0.5b renderer settings notes](docs/v0.5c/CHANGES_v0.5b_RenderSettingsHook.md)
 - [v0.5c interface notes](docs/v0.5c/CHANGES_v0.5c_CleanHotsamplingUI.md)
 
@@ -19,7 +19,7 @@ An in-game toolkit for **CONTROL (DX12)**.
 
 Keep `ControlToolkit.dll` beside the injector. Inject once per game session.
 
-## Frans' DOF
+## About IGCSConnector
 
 Frans' IGCSDOF requires IGCS Relay alongside the IGCS Connector. Enable both ReShade add-ons, enable the named-pipe provider in the toolkit's **IGCSDOF** tab, then start the DOF session from **IGCS Connector → Depth of Field control**. The Relay file is included in the release ZIP.
 
