@@ -5,28 +5,28 @@ An in-game toolkit for **CONTROL (DX12)**.
 ## Download
 
 - [Windows release package](releases/ControlToolkit_0.5c.zip)
-- [Source code for v0.5c](source/v0.5c/)
+- [v0.5c source code](source/v0.5c/)
+- [Frans' IGCSDOF setup](docs/v0.5c/IGCSDOF_SETUP.md)
 - [v0.5b renderer settings notes](docs/v0.5c/CHANGES_v0.5b_RenderSettingsHook.md)
 - [v0.5c interface notes](docs/v0.5c/CHANGES_v0.5c_CleanHotsamplingUI.md)
 
-## Install and run
+## Install
 
 1. Extract the release ZIP.
-2. Start CONTROL in DX12 mode and load into the game.
-3. Run `Inject-Control.cmd` (or `ControlToolkitInjector.exe`) from the extracted folder.
-4. Press **F10** to show or hide the toolkit.
+2. Copy the included `IGCSRelay.addon64` into the same ReShade add-ons folder as your existing `IgcsConnector.addon64`.
+3. Start CONTROL in DX12 mode and load into the game.
+4. Run `ControlToolkitInjector.exe` and press **F10** to show or hide the toolkit.
 
-The injector and DLL must remain in the same folder. Inject once per game session.
+Keep `ControlToolkit.dll` beside the injector. Inject once per game session.
+
+## Frans' DOF
+
+Frans' IGCSDOF requires IGCS Relay alongside the IGCS Connector. Enable both ReShade add-ons, enable the named-pipe provider in the toolkit's **IGCSDOF** tab, then start the DOF session from **IGCS Connector → Depth of Field control**. The Relay file is included in the release ZIP.
 
 ## Included features
 
-- Hotsampling controls for window and internal render resolution. The renderer settings hook preserves the game's current render scale, including reduced and supersampling ratios, when the window is resized.
-- Post-processing and native Northlight light controls.
-- Camera path editing and configurable shortcuts.
-- IGCSDOF provider communication through the IGCS Relay named-pipe protocol.
+Hotsampling, post-processing, native Northlight light controls, camera paths, and IGCSDOF provider support through IGCS Relay.
 
 ## Build from source
 
-The v0.5c source is in [source/v0.5c](source/v0.5c), including the CMake project, injector, and build scripts. Configure and build with CMake and a Windows C++ toolchain. CMake fetches the pinned Dear ImGui and MinHook versions during configuration.
-
-The source tree does not include generated build files or third-party dependency sources.
+The [v0.5c source](source/v0.5c/) includes the CMake project, injector, and build scripts. Build with CMake and a Windows C++ toolchain. CMake fetches the pinned Dear ImGui and MinHook versions during configuration.
